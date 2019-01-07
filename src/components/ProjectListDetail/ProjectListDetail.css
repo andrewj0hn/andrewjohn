@@ -1,0 +1,26 @@
+.ProjectListDetail .Title {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.ProjectListDetail .Title:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    height: 1px;
+    left: 0;
+    right: 0;
+    background-color: #000;
+}
+
+.ProjectListDetail .Title h2 {
+    font-size: 12px;
+    font-family: OpenSansSemiBold;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    margin: 0 0 0 30px;
+    padding: 0 10px;
+    background-color: #FFF;
+    z-index: 1;
+}
