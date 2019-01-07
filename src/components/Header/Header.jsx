@@ -4,18 +4,19 @@ import './Header.css';
 
 const Header = () => (
   <div className="Header">
-    <h1>Home</h1>
-    <div className="navigation">
+    <h1>Digital Enterprises</h1>
+    <nav className="navigation">
       <a href="/digital-enterprises">Digital Enterprises</a>
       <a href="/hogeschool-van-amsterdam">Hogeschool van Amsterdam</a>
+      <a href="/diy">DIY Projecten</a>
       <a href="/contact">Contact</a>
-      <a href="/" className="menu-button">
+      <a href="/" className="Menu">
         Menu
         <span className="top" />
         <span className="middle" />
         <span className="bottom" />
       </a>
-    </div>
+    </nav>
   </div>
 );
 
