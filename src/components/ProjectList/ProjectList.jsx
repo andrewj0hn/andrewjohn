@@ -1,9 +1,6 @@
 // @flow
 import React, { Component } from 'react';
-import homeProjects from '../../data/home';
-import digitalEnterprisesProjects from '../../data/digital_enterprises';
-import hogeschoolVanAmsterdamProjects from '../../data/hogeschool_van_amsterdam';
-import diyProjects from '../../data/diy_projects';
+import data from '../../data/projects';
 import ProjectListDetail from '../ProjectListDetail';
 import * as ROUTES from '../../constants/Routes';
 import './ProjectList.css';
@@ -19,15 +16,15 @@ type State = {
 const getProjects = (pathname: string) => {
   switch (pathname) {
     case ROUTES.HOME:
-      return homeProjects;
+      return data.filter(({ categories }) => categories.indexOf(1) !== -1);
     case ROUTES.DIGITAL_ENTERPRISES:
-      return digitalEnterprisesProjects;
+      return data.filter(({ categories }) => categories.indexOf(2) !== -1);
     case ROUTES.HOGESCHOOL_VAN_AMSTERDAM:
-      return hogeschoolVanAmsterdamProjects;
+      return data.filter(({ categories }) => categories.indexOf(3) !== -1);
     case ROUTES.OWN_WORK:
-      return diyProjects;
+      return data.filter(({ categories }) => categories.indexOf(4) !== -1);
     default:
-      return homeProjects;
+      return data;
   }
 }
 
