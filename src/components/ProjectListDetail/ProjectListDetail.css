@@ -1,3 +1,9 @@
+.ProjectListDetail {
+    color: #000;
+    overflow: hidden;
+    text-decoration: none;
+}
+
 .ProjectListDetail .Title {
     display: flex;
     position: relative;
@@ -23,4 +29,14 @@
     padding: 0 10px;
     background-color: #FFF;
     z-index: 1;
+}
+
+.ProjectListDetail .Image {
+    height: 250px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.ProjectListDetail .Image img {
+    width: 100%;
 }

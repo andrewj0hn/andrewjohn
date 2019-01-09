@@ -1,39 +1,25 @@
 // @flow
 import React from 'react';
+import { Link } from 'react-router-dom';
+import * as ROUTES from '../../constants/Routes';
 import './ProjectListDetail.css';
 
 type Props = {
+  id: number,
   title: string,
   text: string,
-  skills: Array<string>,
-  links: Array<string>,
+  image: Array<string>,
 };
 
-const ProjectListDetail = ({ title, links, text, skills }: Props) => (
-  <div className="ProjectListDetail">
+const ProjectListDetail = ({ id, title, text, image }: Props) => (
+  <Link to={`${ROUTES.DETAIL}/${id}`} className="ProjectListDetail">
     <div className="Title">
       <h2>{title}</h2>
     </div>
-    <p>{text}</p>
-    <div className="Skills">
-      <h4>Skills</h4>
-      <ul>
-        { skills.length > 0 && skills.map(skill => (
-          <li key={skill}>{skill}</li>
-        ))}
-      </ul>
+    <div className="Image">
+      <img src={image} alt={title} />
     </div>
-    <div className="links">
-      <h4>Links</h4>
-      <ul>
-        { links.length > 0 && links.map(link => (
-          <li key={link}>
-            <a href={link} target="_blank">{link}</a>
-          </li>
-        ))}
-      </ul>
-    </div>
-  </div>
+  </Link>
 );
 
 export default ProjectListDetail;
