@@ -18,7 +18,13 @@
 .Header nav a {
     color: #000;
     text-decoration: none;
-    margin-left: 10px;
+    margin-left: 15px;
+    display: inline-block;
+    line-height: 18px;
+}
+
+.Header nav a.active {
+    border-bottom: 1px solid black;
 }
 
 .Header nav a:first-of-type {
