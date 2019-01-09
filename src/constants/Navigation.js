@@ -4,10 +4,6 @@ import * as STRINGS from './Strings';
 
 const navigation = [
   {
-    route: ROUTES.HOME,
-    label: STRINGS.HOME,
-  },
-  {
     route: ROUTES.DIGITAL_ENTERPRISES,
     label: STRINGS.DIGITAL_ENTERPRISES,
   },
