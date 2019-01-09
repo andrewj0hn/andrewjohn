@@ -1,14 +1,32 @@
+@font-face {
+  font-family: OpenSansLight;
+  src: url('/fonts/OpenSans/OpenSans-Light.ttf');
+}
+
+@font-face {
+  font-family: OpenSansRegular;
+  src: url('/fonts/OpenSans/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: OpenSansSemiBold;
+  src: url('/fonts/OpenSans/OpenSans-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: OpenSansBold;
+  src: url('/fonts/OpenSans/OpenSans-Bold.ttf');
+}
+
+@font-face {
+  font-family: OpenSansExtraBold;
+  src: url('/fonts/OpenSans/OpenSans-ExtraBold.ttf');
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: OpenSansRegular, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }
