@@ -57,7 +57,9 @@ class Header extends Component<Props, State> {
     const { pathname } = this.state;
     return (
       <div className="Header">
-        <h1>Andrew John</h1>
+        <Link to={ROUTES.HOME} className="Logo">
+          <h1>Andrew John</h1>
+        </Link>
         <nav className="navigation">
           { navigation.map(({route, label}) => (
             <Link to={route} key={route} className={pathname === route ? 'active' : 'inactive'}>{label}</Link>

@@ -6,7 +6,12 @@
     justify-content: space-between;
 }
 
-.Header h1 {
+.Header .Logo {
+    color: #000;
+    text-decoration: none;
+}
+
+.Header .Logo h1 {
     margin: 0;
     font-family: OpenSansLight;
     font-size: 18px;
