@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "Dierenasiel App",
+    "text": "Implementeren van het nieuwe design en toevoegen van nieuwe functionaliteiten",
+    "skills": [
+      "JavaScript",
+      "React Native",
+      "Redux"
+    ],
+    "links": ["https://voetbalprimeur.nl"]
+  },
+  {
+    "id": 2,
+    "title": "Dierenasiel App",
+    "skills": [
+      "JavaScript",
+      "React Native"
+    ],
+    "links": ["https://gpblog.com"]
+  }
+]
