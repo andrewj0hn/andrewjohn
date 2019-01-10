@@ -4,7 +4,6 @@ import { Link, withRouter } from 'react-router-dom';
 import './Header.css';
 import navigation from '../../constants/Navigation';
 import * as ROUTES from '../../constants/Routes';
-import * as STRINGS from '../../constants/Strings';
 
 type Props = {
   location: Object,
@@ -13,23 +12,6 @@ type Props = {
 type State = {
   pathname: string,
 }
-
-const getScreenTitle = (pathname: string) => {
-  switch (pathname) {
-    case ROUTES.HOME:
-      return STRINGS.HOME;
-    case ROUTES.DIGITAL_ENTERPRISES:
-      return STRINGS.DIGITAL_ENTERPRISES;
-    case ROUTES.HOGESCHOOL_VAN_AMSTERDAM:
-      return STRINGS.HOGESCHOOL_VAN_AMSTERDAM;
-    case ROUTES.OWN_WORK:
-      return STRINGS.OWN_WORK;
-    case ROUTES.CONTACT:
-      return STRINGS.CONTACT;
-    default:
-      return STRINGS.HOME;
-  }
-};
 
 class Header extends Component<Props, State> {
   constructor() {
@@ -40,7 +22,6 @@ class Header extends Component<Props, State> {
   componentDidMount() {
     const { location } = this.props;
     const { pathname } = location;
-    document.title = getScreenTitle(pathname);
     this.setState({ pathname: pathname });
   }
 
@@ -48,7 +29,6 @@ class Header extends Component<Props, State> {
     const { location } = this.props;
     const { pathname } = location;
     if (location !== prevProps.location) {
-      document.title = getScreenTitle(pathname);
       this.setState({ pathname: pathname });
     }
   }
