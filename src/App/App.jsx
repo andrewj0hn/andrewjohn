@@ -3,7 +3,6 @@ import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import './App.css';
 import Header from '../components/Header';
-import Footer from '../components/Footer';
 import ProjectList from '../components/ProjectList';
 import ProjectDetail from '../components/ProjectDetail';
 import Contact from '../components/Contact';
@@ -21,7 +20,6 @@ const App = () => (
         <Route path={`${ROUTES.DETAIL}/:id`} component={ProjectDetail} />
         <Route path={ROUTES.CONTACT} component={Contact} />
       </div>
-      <Footer />
     </div>
   </BrowserRouter>
 );
