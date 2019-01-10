@@ -8,16 +8,18 @@ type Props = {
   id: number,
   title: string,
   text: string,
-  image: Array<string>,
+  images: Array<string>,
 };
 
-const ProjectListDetail = ({ id, title, text, image }: Props) => (
+const ProjectListDetail = ({ id, title, text, images }: Props) => (
   <Link to={`${ROUTES.DETAIL}/${id}`} className="ProjectListDetail">
     <div className="Title">
       <h2>{title}</h2>
     </div>
-    <div className="Image">
-      <img src={image} alt={title} />
+    <div className="Image" style={{ gridTemplateColumns: `repeat(${images.length}, 1fr)` }}>
+      { images.map(image => (
+        <img src={image} alt={title} key={image} />
+      )) }
     </div>
   </Link>
 );

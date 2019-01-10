@@ -35,6 +35,8 @@
     height: 250px;
     margin-top: 10px;
     overflow: hidden;
+    display: grid;
+    grid-column-gap: 5px;
 }
 
 .ProjectListDetail .Image img {
