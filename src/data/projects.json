@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Voetbalprimeur",
     "text": "Implementeren van het nieuwe design en toevoegen van nieuwe functionaliteiten",
-    "image": "/images/digital_enterprises/voetbalprimeur.png",
+    "images": ["/images/digital_enterprises/voetbalprimeur.png"],
     "skills": [
       "PHP",
       "JavaScript",
@@ -16,7 +16,7 @@
   {
     "id": 2,
     "title": "GPBlog",
-    "image": "/images/digital_enterprises/gpblog.png",
+    "images": ["/images/digital_enterprises/gpblog.png"],
     "skills": [
       "PHP",
       "JavaScript"
@@ -27,7 +27,7 @@
   {
     "id": 3,
     "title": "Chepicap",
-    "image": "/images/digital_enterprises/chepicap.png",
+    "images": ["/images/digital_enterprises/chepicap.png"],
     "skills": [
       "PHP",
       "JavaScript"
@@ -38,7 +38,11 @@
   {
     "id": 4,
     "title": "Voetbalprimeur App",
-    "images": [],
+    "images": [
+      "/images/digital_enterprises/voetbalprimeur_app/homepage.jpg",
+      "/images/digital_enterprises/voetbalprimeur_app/detail.jpg",
+      "/images/digital_enterprises/voetbalprimeur_app/comments.jpg"
+    ],
     "skills": [
       "JavaScript",
       "Ionic (Angular 2)"
@@ -64,7 +68,11 @@
   {
     "id": 6,
     "title": "BabyBytes App",
-    "images": [],
+    "images": [
+      "/images/digital_enterprises/babybytes/splash.png",
+      "/images/digital_enterprises/babybytes/home.png",
+      "/images/digital_enterprises/babybytes/detail.png"
+    ],
     "skills": [
       "JavaScript",
       "Ionic (Angular)"
@@ -91,7 +99,11 @@
     "id": 8,
     "title": "Dierenasiel App",
     "text": "Implementeren van het nieuwe design en toevoegen van nieuwe functionaliteiten",
-    "image": "/images/own_work/dierenasiel.jpg",
+    "images": [
+      "/images/own_work/dierenasiel/home.jpg",
+      "/images/own_work/dierenasiel/overview.jpg",
+      "/images/own_work/dierenasiel/detail.jpg"
+    ],
     "skills": [
       "JavaScript",
       "React Native",
