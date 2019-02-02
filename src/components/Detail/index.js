@@ -1,4 +1,4 @@
 // @flow
-import ProjectDetail from './ProjectDetail';
+import Detail from './Detail';
 
-export default ProjectDetail;
+export default Detail;

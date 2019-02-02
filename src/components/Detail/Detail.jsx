@@ -1,5 +1,7 @@
 // @flow
 import React, { Component } from 'react';
+import Images from '../Images';
+import Skills from '../Skills';
 import projects from '../../data/projects';
 
 type Props = {
@@ -8,14 +10,17 @@ type Props = {
 
 type State = {
   title: string,
+  text: string,
   images: Array<string>,
+  skills: Array<string>,
 }
 
-class ProjectDetail extends Component<Props> {
+class Detail extends Component<Props, State> {
   constructor(props) {
     super(props);
     this.state = {
       images: [],
+      skills: [],
     };
   }
 
@@ -29,17 +34,16 @@ class ProjectDetail extends Component<Props> {
   }
 
   render() {
-    const { title, images } = this.state;
+    const { title, text, images, skills } = this.state;
     return (
-      <div>
-        <div className="Image">
-          { images.map(image => (
-            <img src={image} alt={title} />
-          )) }
-        </div>
+      <div className="Detail">
+        <h1>{title}</h1>
+        <p>{text}</p>
+        <Images height="500px" title={title} images={images} />
+        <Skills skills={skills} />
       </div>
     )
   }
 }
 
-export default ProjectDetail;
+export default Detail;
