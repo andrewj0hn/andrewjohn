@@ -1,16 +1,16 @@
-.ProjectListDetail {
+.ListDetail {
     color: #000;
     overflow: hidden;
     text-decoration: none;
 }
 
-.ProjectListDetail .Title {
+.ListDetail .Title {
     display: flex;
     position: relative;
     align-items: center;
 }
 
-.ProjectListDetail .Title:after {
+.ListDetail .Title:after {
     content: '';
     display: inline-block;
     position: absolute;
@@ -20,7 +20,7 @@
     background-color: #000;
 }
 
-.ProjectListDetail .Title h2 {
+.ListDetail .Title h2 {
     font-size: 12px;
     font-family: OpenSansSemiBold;
     text-transform: uppercase;
@@ -29,16 +29,4 @@
     padding: 0 10px;
     background-color: #FFF;
     z-index: 1;
-}
-
-.ProjectListDetail .Image {
-    height: 250px;
-    margin-top: 10px;
-    overflow: hidden;
-    display: grid;
-    grid-column-gap: 5px;
-}
-
-.ProjectListDetail .Image img {
-    width: 100%;
 }

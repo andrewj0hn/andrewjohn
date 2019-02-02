@@ -1,27 +1,29 @@
 // @flow
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Images from '../Images';
+import Skills from '../Skills';
 import * as ROUTES from '../../constants/Routes';
-import './ProjectListDetail.css';
+import './ListDetail.css';
 
 type Props = {
   id: number,
   title: string,
   text: string,
   images: Array<string>,
+  skills: Array<string>,
 };
 
-const ProjectListDetail = ({ id, title, text, images }: Props) => (
-  <Link to={`${ROUTES.DETAIL}/${id}`} className="ProjectListDetail">
-    <div className="Title">
-      <h2>{title}</h2>
-    </div>
-    <div className="Image" style={{ gridTemplateColumns: `repeat(${images.length}, 1fr)` }}>
-      { images.map(image => (
-        <img src={image} alt={title} key={image} />
-      )) }
-    </div>
-  </Link>
+const ListDetail = ({ id, title, text, images, skills }: Props) => (
+  <div>
+    <Link to={`${ROUTES.DETAIL}/${id}`} className="ListDetail">
+      <div className="Title">
+        <h2>{title}</h2>
+      </div>
+      <Images images={images} title={title} />
+    </Link>
+    <Skills skills={skills} />
+  </div>
 );
 
-export default ProjectListDetail;
+export default ListDetail;
