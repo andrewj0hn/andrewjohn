@@ -1,0 +1,13 @@
+.Images {
+    height: 250px;
+    margin-top: 10px;
+    overflow: hidden;
+    display: grid;
+    grid-column-gap: 5px;
+}
+
+.Images img {
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
