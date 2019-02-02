@@ -1,4 +1,4 @@
 // @flow
-import ProjectList from './ProjectList';
+import ListOverview from './ListOverview';
 
-export default ProjectList;
+export default ListOverview;

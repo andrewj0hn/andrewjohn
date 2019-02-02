@@ -1,10 +1,10 @@
 // @flow
 import React, { Component } from 'react';
 import data from '../../data/projects';
-import ProjectListDetail from '../ProjectListDetail';
+import ListDetail from '../ListDetail';
 import * as ROUTES from '../../constants/Routes';
 import * as STRINGS from '../../constants/Strings';
-import './ProjectList.css';
+import './ListOverview.css';
 
 type Props = {
   location: Object,
@@ -46,7 +46,7 @@ const getProjects = (pathname: string) => {
   }
 }
 
-class ProjectList extends Component<Props, State> {
+class ListOverview extends Component<Props, State> {
   constructor(props: Object) {
     super(props);
     this.state = {
@@ -67,11 +67,11 @@ class ProjectList extends Component<Props, State> {
     return (
       <div className="Grid">
         { projects.map(project => (
-          <ProjectListDetail key={project.id} {...project} />
+          <ListDetail key={project.id} {...project} />
         ))}
       </div>
     );
   }
 }
 
-export default ProjectList;
+export default ListOverview;

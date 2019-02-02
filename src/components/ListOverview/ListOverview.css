@@ -2,5 +2,11 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 40px;
-    grid-row-gap: 20px;
+    grid-row-gap: 25px;
+}
+
+@media only screen and (max-width: 800px) {
+    .Grid {
+        grid-template-columns: 1fr;
+    }
 }
